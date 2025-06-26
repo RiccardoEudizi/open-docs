@@ -1,0 +1,138 @@
+/* Tailwind CSS Styles for React-Markdown (Dark Theme)
+  --------------------------------------
+  Save this content as a .css file (e.g., `markdown.css`) and import it into your main CSS file 
+  or directly into your React component.
+
+  Wrap your `react-markdown` output in a container with the class `markdown-body`.
+
+  Example Usage in a React Component:
+  
+  import ReactMarkdown from 'react-markdown';
+  import './markdown.css'; // Import the CSS file
+
+  const MyComponent = ({ markdownContent }) => (
+    <div className="markdown-body">
+      <ReactMarkdown>{markdownContent}</ReactMarkdown>
+    </div>
+  );
+*/
+
+.markdown-body {
+  /* General Typography & Spacing */
+  @apply text-base leading-relaxed text-gray-300;
+}
+
+/* Headings */
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  @apply font-bold tracking-tight text-gray-100 mb-4 mt-6 border-b pb-2 border-white/20;
+}
+
+.markdown-body h1 {
+  @apply text-4xl;
+}
+
+.markdown-body h2 {
+  @apply text-3xl;
+}
+
+.markdown-body h3 {
+  @apply text-2xl;
+}
+
+.markdown-body h4 {
+  @apply text-xl;
+}
+
+.markdown-body h5 {
+  @apply text-lg;
+}
+
+.markdown-body h6 {
+  @apply text-base;
+}
+
+/* Paragraphs */
+.markdown-body p {
+  @apply mb-4;
+}
+
+/* Links */
+.markdown-body a {
+  @apply text-blue-400 font-medium underline transition-colors duration-200 hover:text-blue-300;
+}
+
+/* Lists */
+.markdown-body ul,
+.markdown-body ol {
+  @apply  pl-8;
+}
+
+.markdown-body ul {
+  @apply list-disc;
+}
+
+.markdown-body ol {
+  @apply list-decimal;
+}
+
+.markdown-body li {
+  @apply mb-2;
+}
+
+
+
+/* Blockquotes */
+.markdown-body blockquote {
+  @apply mb-2 border-l-4 border-white/20 pl-4 py-2 text-white/50 bg-white/20 rounded-r-lg;
+}
+
+.markdown-body blockquote > p {
+  @apply mb-0;
+}
+
+/* Code Blocks */
+.markdown-body pre {
+  @apply bg-white/20 text-gray-200 p-4 rounded-lg  overflow-x-auto;
+}
+
+.markdown-body pre code {
+  @apply p-0 bg-transparent text-sm;
+}
+
+/* Inline Code */
+.markdown-body code {
+  @apply bg-white/20 text-gray-200 px-1.5 py-0.5 rounded-md text-sm;
+}
+
+/* Horizontal Rule */
+.markdown-body hr {
+  @apply my-8 border-t border-white/20;
+}
+
+/* Images */
+.markdown-body img {
+  @apply max-w-full h-auto rounded-lg my-4;
+}
+
+/* Tables */
+.markdown-body table {
+  @apply w-full border-collapse mb-4;
+}
+
+.markdown-body th,
+.markdown-body td {
+  @apply border border-white/20 px-4 py-2 text-left;
+}
+
+.markdown-body th {
+  @apply bg-white/20 font-semibold;
+}
+
+.markdown-body tbody tr:nth-child(even) {
+  @apply bg-white/50;
+}
