@@ -1,7 +1,4 @@
 # OPEN-DOCS: AI-Powered Repository Documentation & Analysis
-
-This documentation provides a comprehensive overview of the `auto-doc-ai` GitHub repository, an AI-powered web application designed to generate technical documentation and insightful analysis for Git repositories.
-
 ## 1. Project Overview
 
 **OPEN-DOCS** is an innovative web application that leverages artificial intelligence to streamline the process of understanding and documenting software projects. By simply providing a Git repository URL, users can obtain comprehensive documentation and a detailed AI-driven analysis of the codebase, including its project type, tech stack, complexity, and key features. The application aims to enhance developer productivity by providing instant, high-quality insights into any Git repository.
@@ -40,8 +37,8 @@ To set up and run the OPEN-DOCS application locally, follow these steps:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/auto-doc-ai/auto-doc-ai.git
-    cd auto-doc-ai
+    git clone https://github.com/open-docs/open-docs.git
+    cd open-docs
     ```
 
 2.  **Install Dependencies:**
@@ -115,7 +112,7 @@ Using OPEN-DOCS is straightforward through its web interface:
 
 ## 5. API Documentation (Internal)
 
-The `auto-doc-ai` project is a web application, and the following "APIs" refer to its internal Next.js API routes. These endpoints are designed for communication between the frontend and backend of the application and are not intended for direct external consumption without the accompanying UI.
+The `open-docs` project is a web application, and the following "APIs" refer to its internal Next.js API routes. These endpoints are designed for communication between the frontend and backend of the application and are not intended for direct external consumption without the accompanying UI.
 
 ### Endpoints
 
@@ -214,7 +211,7 @@ As detailed in the [Installation](#3-installation) section, environment variable
 
 ## 7. License
 
-The license for the `auto-doc-ai` repository is **Not Specified**.
+The license for the `open-docs` repository is **Not Specified**.
 
 It is highly recommended that a license file (e.g., `LICENSE.md`) be added to the repository to clarify the terms under which the software can be used, modified, and distributed.
 

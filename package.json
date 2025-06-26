@@ -1,5 +1,6 @@
 {
   "name": "open-docs",
+  "author": "Riccardo Eudizi",
   "version": "0.1.0",
   "private": true,
   "scripts": {
