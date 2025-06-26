@@ -13,6 +13,7 @@ import {
 	GitBranch,
 	Loader2,
 	AlertCircle,
+	GithubIcon,
 } from "lucide-react";
 import { MemoizedMarkdown as Markdown } from "@/components/markdown";
 import "@/styles/markdown.css";
@@ -208,7 +209,7 @@ ${content}
 	return (
 		<div className="min-h-screen  bg-black text-white font-mono">
 			{/* Header */}
-			<div className="border-b border-white/20 bg-black">
+			<div className="border-b border-white/20 bg-black flex">
 				<div className="container mx-auto px-4 py-4">
 					<div className="flex items-center gap-3">
 						<Terminal className="h-6 w-6" />
@@ -223,6 +224,13 @@ ${content}
 					<p className="text-white/60 text-sm mt-1 font-mono">
 						AI-powered repository documentation generator
 					</p>
+				</div>
+				<div className="px-6 py-4 flex items-center justify-end">
+					<Button asChild  variant="outline">
+						<a href="https://github.com/RiccardoEudizi/open-docs.git">
+						<GithubIcon className="h-4 w-4 mr-2"/> GitHub
+						</a>
+					</Button>
 				</div>
 			</div>
 
@@ -648,7 +656,6 @@ ${generationData
 														if (message.role === "assistant") {
 															return message.parts.map((part) => {
 																if (part.type === "text") {
-																	
 																	return part.text;
 																}
 															});
