@@ -37,7 +37,7 @@ To set up and run the OPEN-DOCS application locally, follow these steps:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/open-docs/open-docs.git
+    git clone https://github.com/RiccardoEudizi/open-docs.git
     cd open-docs
     ```
 
