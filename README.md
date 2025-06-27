@@ -231,7 +231,6 @@ Here are some common issues you might encounter and their potential solutions:
     *   **API Key Validity:** If using Google Generative AI, confirm your `GOOGLE_API_KEY` is valid and active.
 
 *   **Documentation generation is slow or incomplete for large repositories**:
-    *   **File Limit:** The current implementation of the repository analysis (specifically in `lib/codebase.ts`) has a hard limit, processing only the first 10 supported files it encounters (`fileContents.size < 11`). For larger repositories, this means only a small subset of files will be documented. This is a design choice or current limitation.
     *   **AI Context Window:** Large files or a high number of files can exceed the AI model's context window, leading to truncated or less accurate documentation.
     *   **Processing Time:** Generating documentation for many files or very large files can take a significant amount of time.
 

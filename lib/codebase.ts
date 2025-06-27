@@ -194,7 +194,7 @@ async function walkTree(
 
 			const type = await entry.type();
 
-			if (type === "blob" && fileContents.size < 11) {
+			if (type === "blob" ) {
 				const content = Buffer.from(
 					(await entry.content()) as Uint8Array,
 				).toString("utf8");
