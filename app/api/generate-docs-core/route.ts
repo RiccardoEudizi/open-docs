@@ -10,6 +10,9 @@ export async function POST(request: NextRequest) {
 		execute: async (dataStream) => {
 			try {
 				dataStream.writeData({ status: "initializing" });
+				if (process.env.NEXT_PUBLIC_IS_DEMO === "1") {
+					throw new Error("Demo mode is enabled");
+				}
 				const streams = await generateDoc(repoUrl);
 				await Promise.all(
 					streams.entries().map(async ([path, stream]) => {
