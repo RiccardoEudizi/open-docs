@@ -51,7 +51,7 @@
     "embla-carousel-react": "8.5.1",
     "geist": "latest",
     "input-otp": "1.4.1",
-    "isomorphic-git": "^1.31.0",
+    "isomorphic-git": "1.31.0",
     "jszip": "latest",
     "lucide-react": "^0.454.0",
     "marked": "^15.0.12",
